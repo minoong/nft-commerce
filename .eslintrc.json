@@ -20,8 +20,13 @@
   "plugin:prettier/recommended"
  ],
  "rules": {
+  "import/prefer-default-export": "off",
+  "react/function-component-definition": "off",
+  "react/require-default-props": "off",
+  "react/jsx-props-no-spreading": "off",
   "react/react-in-jsx-scope": "off",
   "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
+  "import/no-extraneous-dependencies": ["off", { "devDependencies": ["src/**/*.stories.js"] }],
   "import/extensions": [
    "error",
    "ignorePackages",
