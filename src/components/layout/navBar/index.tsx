@@ -1,3 +1,4 @@
+import MobileMenu from '@/components/layout/navBar/mobile-menu'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -5,7 +6,14 @@ import React from 'react'
 function NavBar() {
  return (
   <nav className="relative flex items-center justify-between bg-white p-4 dark:bg-black lg:px-10">
-   <div className="block w-1/3 md:hidden">MobileMenu</div>
+   <div className="block w-1/3 md:hidden">
+    <MobileMenu
+     menu={[
+      { path: '/', title: '#1' },
+      { path: '/', title: '#2' },
+     ]}
+    />
+   </div>
    <div className="flex justify-self-center md:w-1/3 md:justify-self-start">
     <div className="md:mr-4">
      <Link href="/" aria-label="Go back home">
